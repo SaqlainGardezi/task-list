@@ -51,7 +51,7 @@ var TasksComponent = (function () {
             title: task.title,
             isDone: !task.isDone
         };
-        this.taskService.updateTask(_task).subscribe(function (data) {
+        this.taskService.updateStatus(_task).subscribe(function (data) {
             task.isDone = !task.isDone;
         });
     };
